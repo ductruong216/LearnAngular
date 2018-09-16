@@ -1,0 +1,61 @@
+<!-- BAI 3: DATABINDING -->
+
+<!-- <h1>Movie Details</h1>
+<div><span>ID: </span>{{movie.ID}}</div>
+<div><span>Name: </span>{{movie.Name | uppercase}}</div>
+<div><span>Release Year: </span>{{movie.releaseYear | date}}</div>
+
+<div style="margin:18px; text-align: left;">
+  <label> Movie Name: 
+    <input [(ngModel)]="movie.Name" placeholder="Enter movie's name">
+  </label>
+
+  <label> ReleaseYear Name: 
+      <input [(ngModel)]="movie.releaseYear" placeholder="Enter releaseYear's name">
+    </label>
+</div> -->
+
+<!-- END DATA BINDING -->
+
+<!-- [class.selected]="eachMovie===selectedMovie"  -->
+<!-- (click)="onSelected(eachMovie)"> -->
+
+<h2>My favorite movies</h2>
+
+<div style="text-align: left">
+  <table style="width: 300px">
+    <tr>
+      <td>New movie's name:</td>
+      <td>
+        <input #movieName placeholder="Name">
+      </td>
+    </tr>
+
+    <tr>
+      <td>New movie's Release year:</td>
+      <td>
+        <input #releaseYear placeholder="Release Year">
+      </td>
+    </tr>
+    <tr>
+
+      <button type="button" (click)="add(movieName.value,releaseYear.value); movieName.value='';
+      releaseYear.value=''
+      " class="btn btn-primary">Add new</button>
+    </tr>
+  </table>
+</div>
+
+<div class="parent">
+  <ol class="movie">
+    <li class="movieListItem" *ngFor="let eachMovie of movies">
+      <a routerLink="/detail/{{eachMovie.id}}" style="text-decoration: none">
+        {{eachMovie.name}} - {{eachMovie.releaseYear}}
+      </a>
+      <button title="Remove Movie" (click)="delete(eachMovie.id)">
+        x
+      </button>
+    </li>
+  </ol>
+  <!-- <app-movies-detail [movie]=selectedMovie></app-movies-detail> -->
+</div>

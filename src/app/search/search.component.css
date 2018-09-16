@@ -1,0 +1,15 @@
+.movies{
+    background: #eee;
+    padding: .5em 1em .5em 1.5em;
+    margin: 1em;
+    max-width: 16em;
+}
+
+.movies .movieListItem{
+    font-size: .875em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #cce5ff;
+    padding: .3em;
+    margin: .2em;
+    text-align: center;
+}

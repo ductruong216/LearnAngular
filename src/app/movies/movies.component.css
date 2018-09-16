@@ -1,0 +1,34 @@
+.movie {
+    background: #3399ff;
+    padding: .5em 1em .5em 1.5em;
+    margin: 1em;
+    max-width: 16em;
+}
+
+.movie .movieListItem {
+    font-size: .875em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #ffffff;
+    padding: .3em;
+    margin: .2em;
+    text-align: left;
+}
+
+.selected {
+    background: mediumaquamarine !important;
+    color: #fff;
+}
+
+.parent {
+    display: flex;
+}
+
+.details {
+    background: greenyellow;
+    color: #fff;
+    padding: .5em;
+    margin: 1em;
+    max-width: 16em;
+    text-align: left;
+    font-size: .875em;
+}

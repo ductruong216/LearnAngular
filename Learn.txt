@@ -1,0 +1,2 @@
+===============Data Binding=================
+app.module -> import tat ca module co su dung trong app
